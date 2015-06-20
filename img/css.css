@@ -1,0 +1,252 @@
+/** {
+	border: solid black 1px;
+}*/
+.header {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	height:50px; 
+	background-color: #1a1a1a;
+	z-index: 100;
+}
+.header>img {
+	max-width: auto;
+	max-height: 30px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:50px; 
+	background-color: #1a1a1a;
+	z-index: 100;
+}
+.footer>p {
+	font-family: 'Raleway', sans-serif; 
+	font-size: 12px;
+	color: grey;
+	float: right;
+	margin-right: 40px;
+	margin-top: 17px;
+}
+.seperator {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 300px;
+	height: 30px;
+	background-image: url("seperator.png");
+}
+img.logo {
+	padding-top: 20px;
+	margin: 0 auto;
+	max-width: 300px;
+	max-height: 300px;
+	display: block;
+}
+body {
+	background-image: url("bg.jpg");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+	background-color: #cccccc;
+}
+#sectiontitle {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.aboutmetitle {
+	color: #ABB654;
+}
+.portfoliotitle {
+	color: #17B6D0;
+}
+.contactmetitle {
+	color: #AE4331;
+}
+section.top {
+	height: 530px;
+	margin: auto;
+	display: block;
+}
+div.buttons {
+	display: table;
+	margin: auto;
+	z-index: 1;
+}
+.box {
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	display: inline-table;
+	opacity: .5;
+}
+#box1 {
+	background-image: url("aboutme.png");
+}
+#box2 {
+	background-image: url("portfolio.png");	
+}
+#box3 {
+	background-image: url("contactme.png");
+}
+/*Start bio css*/
+section.aboutme {
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	width: 900px;
+	min-height: 100px;
+	overflow: hidden;
+	margin: auto;
+	display: block;
+}
+.pic {
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: inline-block;
+	background-color: #AE4331;
+}
+.content {
+	color: #ABB654;
+	font-family: 'Raleway', sans-serif;
+	margin-right: 40px;
+	opacity: .5;
+}
+/*Start portfolio css*/
+section.portfolio {
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	height: 900px;
+	width: 900px;
+	min-height: 100px;
+	overflow: hidden;
+	margin: auto;
+	display: block;
+}
+.gal {
+	margin: auto;
+	display: table;
+}
+.gallary {
+	max-width: 225px;
+	max-height: 225px;
+	display: block-inline;
+	opacity: .5;
+}
+#gal1 {
+	background-color: #ABB654;
+}
+#gal2 {
+	background-color: #17B6D0;
+}
+#gal3 {
+	background-color: #AE4331;
+}
+#gal4 {
+	background-color: #453151;
+}
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+/*Start contactme css*/
+section.contactme {
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	width: 900px;
+	min-height: 100px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 80px;
+	display: block;
+}
+.contactme>form {
+	float: right;
+	margin-right: 30px;
+	width: 430px;
+	height: 400px;
+	display: inline-block;
+}
+#map-canvas {
+	display: inline-block;
+    width: 380px;
+    height: 380px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+input, textarea { 
+    padding: 9px; 
+    border: solid 1px #AE4331; 
+    outline: 0; 
+    font: normal 13px/100% 'Raleway',Verdana, Tahoma, sans-serif; 
+    width: 200px; 
+    background: #AE4331;
+	opacity: .75;
+    } 
+   
+textarea { 
+    width: 400px; 
+    max-width: 400px; 
+    height: 150px; 
+    line-height: 150%;
+	background-color: #AE4331;
+    } 
+   
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    border-color: #ABB654; 
+    } 
+   
+.form label { 
+    margin-left: 10px; 
+    color: #ABB654;
+	font-family: 'Raleway', sans-serif;
+    } 
+   
+.submit input { 
+    width: auto; 
+    padding: 9px 15px; 
+    background: #AE4331; 
+    border: 0; 
+    font-size: 14px; 
+    color: #ABB654; 
+    }
